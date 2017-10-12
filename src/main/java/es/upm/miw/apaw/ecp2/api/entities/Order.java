@@ -39,6 +39,14 @@ public class Order {
     public BigDecimal getAmount() {
         return amount;
     }
+    
+    public void setDate(Calendar date) {
+    	this.date = Calendar.getInstance();
+    }
+    
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
 
     
     public Professional getProfessional() {
