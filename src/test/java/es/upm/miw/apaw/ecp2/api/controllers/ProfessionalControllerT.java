@@ -3,7 +3,6 @@ package es.upm.miw.apaw.ecp2.api.controllers;
 
 import static org.junit.Assert.assertEquals;
 
-import java.math.BigDecimal;
 
 import org.junit.Before;
 import org.junit.Test;
