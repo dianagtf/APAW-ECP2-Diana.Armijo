@@ -14,8 +14,13 @@ public class Professional {
 
     public Professional() {
     }
+    
+    public Professional(long phone) {
+    	this.phone = phone;
+    }
 
-    public Professional(long city, Order order) {
+    public Professional(long phone, long city, Order order) {
+    	this.phone = phone;
         this.city = city;
         this.setOrder(order);
     }
