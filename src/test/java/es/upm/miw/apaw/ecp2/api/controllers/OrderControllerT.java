@@ -20,15 +20,15 @@ public class OrderControllerT {
 		BigDecimal amount = new BigDecimal(10);
 		
 		orderController = new OrderController();
-		DaoFactory.getFactory().getOrderDao().create(new Order(amount));
+		orderController.createOrder(amount);
     }
 	
 	@Test
     public void testCreateOrder() {
 		BigDecimal amount2 = new BigDecimal(20);
 		
-		DaoFactory.getFactory().getOrderDao().create(new Order(amount2));
-		assertEquals(2, DaoFactory.getFactory().getOrderDao().findAll().size());
-		assertEquals(amount2, DaoFactory.getFactory().getOrderDao().read(2).getAmount());
+		orderController.createOrder(amount2);
+		assertEquals(2, OrderController.orderList().size());
+		assertEquals(amount2, OrderController.orderList().get(1).getAmount());
     }
 }
