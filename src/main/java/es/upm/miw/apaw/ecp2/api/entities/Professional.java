@@ -17,7 +17,7 @@ public class Professional {
 
     public Professional(long city, Order order) {
         this.city = city;
-        this.order = order;
+        this.setOrder(order);
     }
 
     public long getPhone() {
@@ -51,6 +51,14 @@ public class Professional {
     public void setLevel(String level) {
     	this.level.setLevel(level);;
     }
+    
+    public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
+	}
 
     @Override
     public String toString() {
