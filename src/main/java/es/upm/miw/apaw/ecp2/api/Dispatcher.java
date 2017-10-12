@@ -27,7 +27,7 @@ public class Dispatcher {
 			if (request.isEqualsPath(ProfessionalResource.PROFESSIONALS)) {
 				
 			} else if (request.isEqualsPath(ProfessionalResource.PROFESSIONALS + ProfessionalResource.PHONES)) {
-				response.setBody("");
+				response.setBody("{\"id\":1,\"phones\":\"555555555\"}");
 				
 				/*professionalResource.readProfessional(Integer.valueOf(request.paths()[1])).toString()*/
 			} else {
