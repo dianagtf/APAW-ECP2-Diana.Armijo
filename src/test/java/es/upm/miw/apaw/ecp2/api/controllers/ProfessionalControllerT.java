@@ -33,4 +33,15 @@ public class ProfessionalControllerT {
 
     }
 
+	@Test
+    public void testSeeProfessionalLevel() {
+		long phone2 = 55555555;
+
+		DaoFactory.getFactory().getProfessionalDao().create(new Professional(phone2));
+		DaoFactory.getFactory().getProfessionalDao().findAll().get(1).setLevel("NORMAL");
+		assertEquals(2, DaoFactory.getFactory().getProfessionalDao().findAll().size());
+		assertEquals("NORMAL", DaoFactory.getFactory().getProfessionalDao().findAll().get(1).getLevel());
+
+    }
+	
 }

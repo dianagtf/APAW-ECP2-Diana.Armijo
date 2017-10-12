@@ -5,5 +5,7 @@ public class ProfessionalResource {
 	public static final String PROFESSIONALS = "professionals";
 	public static final String PHONES = "/{phones}";
 	public static final String LEVEL = "/{level}";
+	
+	
 
 }
