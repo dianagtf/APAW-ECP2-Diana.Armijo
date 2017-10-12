@@ -10,7 +10,7 @@ public class Professional {
 
     private Order order;
     
-    private Level level;
+    private String level;
 
     public Professional() {
     }
@@ -50,11 +50,11 @@ public class Professional {
     }
     
     public String getLevel() {
-    	return level.getLevel();
+    	return level;
     }
     
     public void setLevel(String level) {
-    	this.level.setLevel(level);;
+    	this.level = level;
     }
     
     public Order getOrder() {
